@@ -57,8 +57,8 @@ int isEmpty()
 {
 	if (front == -1 || front > back)
 	{
-		front = -1;	//we dont want our front index to be bigger than back index.
-		back = -1;	//so we fix that just in case if the queue is empty by it's front index being bigger than it's back index.
+		front = -1;	//we dont want our front index to be greater than back index.
+		back = -1;	//so we fix that just in case if the queue is empty by it's front index being greater than it's back index.
 		return 1;	//since C doesn't have a boolean data type, we will take 1 as true
 	}
 	return 0;		//and 0 as false.
